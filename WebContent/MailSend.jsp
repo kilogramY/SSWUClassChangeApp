@@ -23,11 +23,11 @@
 	request.setCharacterEncoding("UTF-8");
 	String receiver = (String)request.getAttribute("email");
 	String sTime = (String)request.getAttribute("sendTime");
-	String sender = "kmhjn95@gmail.com";
+	String sender = "hj7959@naver.com";
 	String subject = "성신여자대학교 분반 교환시스템 비밀번호 변경 링크입니다.";
-	String link = "\"http://49.167.9.18:8080/SSWUClassChangeApp/UpdatePW.jsp?email="+receiver+"&sTime="+sTime+"\"";
+	String link = "\"http://211.244.114.84/SSWUClassChangeApp/UpdatePW.jsp?email="+receiver+"&sTime="+sTime+"\"";
 	String content = "<div style=\"padding:8px 15px;\"><font color=\"purple\" size=\"3\">"
-				+"<img src=\"http://49.167.9.18:8080/SSWUClassChangeApp/image/img_symbol.png\" width=\"30px\"> <b>성신여자대학교 분반 교환시스템<b></font></div>"
+				+"<img src=\"http://211.244.114.84/SSWUClassChangeApp/image/img_symbol.png\" width=\"30px\"> <b>성신여자대학교 분반 교환시스템<b></font></div>"
 				+"<div style=\"background-color:#e7e7f7; display:table-cell; vertical-align:middle; text-align:center; width:500px; padding:10px\">이 <a href="
 				+link
 				+"target=\"_blank\">링크</a>를 눌러 비밀번호 변경을 마칩니다.</div>";
@@ -38,12 +38,12 @@
 	//SMTP 서버의 계정 설정
 	//Naver와 연결할 경우 네이버 아이디 지정
 	//Google과 연결할 경우 본인의 Gmail 주소
-	p.put("mail.smtp.user", "kmhjn95");
+	p.put("mail.smtp.user", "hj7959");
 	
 	//SMTP 서버 정보 설정
 	//네이버일 경우 smtp.naver.com
 	//Google일 경우 smtp.gmail.com
-	p.put("mail.smtp.host", "smtp.gmail.com");
+	p.put("mail.smtp.host", "smtp.naver.com");
 	 
 	//아래 정보는 네이버와 구글이 동일하므로 수정하지 마세요.
 	p.put("mail.smtp.port", "465");

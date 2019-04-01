@@ -14,7 +14,7 @@
   </welcome-file-list>
   <context-param>
     <param-name>dburl</param-name>
-    <param-value>jdbc:mysql://localhost:3306/sswuchangeclass</param-value>
+    <param-value>jdbc:mysql://localhost:3306/sswuchangeclass?autoReconnection=true</param-value>
   </context-param>
   <context-param>
     <param-name>dbuser</param-name>
